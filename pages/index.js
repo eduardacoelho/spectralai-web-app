@@ -14,6 +14,7 @@ import * as dataraw from '../public/data/forWeb_Tabular.json'
 const data = Array.from(dataraw.default)
 const ids = data.map((item) => (item.ids))
 
+
 export default class Home extends React.Component  {
   constructor(props) {
     super(props)
@@ -27,28 +28,30 @@ export default class Home extends React.Component  {
   } 
 
   render() {
+    
     return (
       <>
-        <div className={styles.title_container}>
-          <Image 
-            src="/images/50-70-4.svg"
-            width="200"
-            height="66"
-            alt="Spectral AI"
-          />
-          <h1 className={styles.title}>
-            Spectral<span>AI</span>
-          </h1>
-        </div>
-        <div className={styles.spectral_container}>
-            <div className={styles.molecule_select}>
+        <div className={styles.molecule_select}>
               {data.map((item) => (
                 <CardMolecule
                   mol_data={item.ids}
                   key={item.ids.cas}
                   onMolSelect={this.handleIndexChange}
+                  ind_cas={data[this.state.ind].ids.cas}
                  />
               ))}
+            </div>
+        <div className={styles.spectral_container}>
+            <div className={styles.title_container}>
+              <h1 className={styles.title}>
+                Spectral<span>AI</span>
+              </h1>
+              <Image 
+                src={`/images/${data[this.state.ind].ids.cas}.svg`}
+                width="300"
+                height="100"
+                alt="Spectral AI"
+              />
             </div>
             <div className={styles.spectral_tables}>
               <div className={styles.spectral_prediction}>

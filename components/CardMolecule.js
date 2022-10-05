@@ -13,19 +13,30 @@ export default class CardMolecule extends React.Component {
         this.props.onMolSelect(e)
     }
     render () {
-        //console.log(`/images/${this.mol_data.cas}.svg`)
         return (
             <>
-            <div className={styles.card} onClick={this.handleMolSelect.bind(this,this.mol_data)}>
-                <Image 
-                    src={`/images/${this.mol_data.cas}.svg`}
-                    width="300"
-                    height="100"
-                    alt={this.mol_data.smile}
-                />
-                <p className={styles.id}>#{this.mol_data.cas}</p>
-                <p className={styles.title}>{this.mol_data.smile}</p>
-            </div>
+                <div 
+                    className={                        
+                        this.props.mol_data.cas === this.props.ind_cas
+                            ? styles.card_active
+                            : styles.card_inactive
+                    } 
+                    onClick={this.handleMolSelect.bind(this,this.mol_data)}
+                >
+                    <Image 
+                        src={`/images/${this.mol_data.cas}.svg`}
+                        width="300"
+                        height="100"
+                        alt={this.mol_data.smile}
+                    />
+                    <p className={styles.id}>
+                        {`cas #${this.mol_data.cas}`}
+                    </p>
+                    <p className={styles.title}>
+                        {this.mol_data.smile}
+                    </p>
+                </div>
+            
             </>
         )
     }

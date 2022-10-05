@@ -1,0 +1,6 @@
+[
+"Modelos de deep learning foram treinados para predizer propriedades estruturais moleculares a partir de dados espectrais.",
+"Foram reunidos por volta de 1800 espectros de infravermelho no NIST, os compostos foram rotulados indicando a presença ou ausência de grupos funcionais e outras características estruturais, através de funções de checagem de fragmentos. Ambos os modelos foram treinados para predição dos grupos ",
+"Os treinamentos foram realizados crescendo a quantidade de camadas ocultas e o número de neurônios cada camada, chegando ao ponto ótimo na arquitetura com 5 camadas ocultas com respectivamente 1024, 512, 256, 128 e 64 neurônios nestas camadas. ",
+"20% desses compostos foram separados para validação e estão apresentados aqui nesta aplicação junto com suas métricas."
+]

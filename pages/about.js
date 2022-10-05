@@ -1,10 +1,17 @@
 import Image from 'next/image'
 import styles from "../styles/About.module.css"
+
+import * as dataraw from '../public/data/about.json'
+const data = Array.from(dataraw.default)
+
 export default function About() {
     return (
         <div className={styles.about}>
             <h1>Sobre o projeto</h1>
-            <p>balbablabalb blab lab lab lab lab aba bab ababalb abl a</p>
+            {data.map((item,index) => (
+                <p key={index}>{item}</p>
+            ))}
+            
             <Image 
                 src="/logo.png"
                 width="600"
