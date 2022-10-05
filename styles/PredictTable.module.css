@@ -1,0 +1,14 @@
+.predict_table {
+    display:table;
+    column-rule-width: 1px;
+}
+.predict_table th {
+    text-align: left;
+    font-weight: bold;
+    border: 5px solid transparent
+}
+
+.predict_table td {
+    max-width: 30rem;
+    
+}

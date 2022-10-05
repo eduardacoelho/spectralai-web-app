@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='iso-8859-1'?>
+<svg version='1.1' baseProfile='full'
+              xmlns='http://www.w3.org/2000/svg'
+                      xmlns:rdkit='http://www.rdkit.org/xml'
+                      xmlns:xlink='http://www.w3.org/1999/xlink'
+                  xml:space='preserve'
+width='450px' height='150px' viewBox='0 0 450 150'>
+<!-- END OF HEADER -->
+<rect style='opacity:0.0;fill:none;stroke:none' width='450' height='150' x='0' y='0'> </rect>
+<path class='bond-0' d='M 20.4545,88.6968 L 158.952,29.7624' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-1' d='M 158.952,29.7624 L 279.239,120.238' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-2' d='M 285.133,134.087 L 346,108.187' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-2' d='M 346,108.187 L 406.867,82.286' style='fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-2' d='M 273.346,106.388 L 334.213,80.4871' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-2' d='M 334.213,80.4871 L 395.081,54.5865' style='fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path  class='atom-3' d='M 404.737 61.3832
+Q 404.737 54.5832, 408.097 50.7832
+Q 411.457 46.9832, 417.737 46.9832
+Q 424.017 46.9832, 427.377 50.7832
+Q 430.737 54.5832, 430.737 61.3832
+Q 430.737 68.2632, 427.337 72.1832
+Q 423.937 76.0632, 417.737 76.0632
+Q 411.497 76.0632, 408.097 72.1832
+Q 404.737 68.3032, 404.737 61.3832
+M 417.737 72.8632
+Q 422.057 72.8632, 424.377 69.9832
+Q 426.737 67.0632, 426.737 61.3832
+Q 426.737 55.8232, 424.377 53.0232
+Q 422.057 50.1832, 417.737 50.1832
+Q 413.417 50.1832, 411.057 52.9832
+Q 408.737 55.7832, 408.737 61.3832
+Q 408.737 67.1032, 411.057 69.9832
+Q 413.417 72.8632, 417.737 72.8632
+' fill='#FF0000'/>
+</svg>

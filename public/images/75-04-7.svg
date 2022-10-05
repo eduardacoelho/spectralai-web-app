@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='iso-8859-1'?>
+<svg version='1.1' baseProfile='full'
+              xmlns='http://www.w3.org/2000/svg'
+                      xmlns:rdkit='http://www.rdkit.org/xml'
+                      xmlns:xlink='http://www.w3.org/1999/xlink'
+                  xml:space='preserve'
+width='450px' height='150px' viewBox='0 0 450 150'>
+<!-- END OF HEADER -->
+<rect style='opacity:0.0;fill:none;stroke:none' width='450' height='150' x='0' y='0'> </rect>
+<path class='bond-0' d='M 20.4545,114.588 L 202.179,9.66967' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-1' d='M 202.179,9.66967 L 285.048,57.5143' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-1' d='M 285.048,57.5143 L 367.918,105.359' style='fill:none;fill-rule:evenodd;stroke:#0000FF;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path  class='atom-2' d='M 377.644 100.428
+L 386.924 115.428
+Q 387.844 116.908, 389.324 119.588
+Q 390.804 122.268, 390.884 122.428
+L 390.884 100.428
+L 394.644 100.428
+L 394.644 128.748
+L 390.764 128.748
+L 380.804 112.348
+Q 379.644 110.428, 378.404 108.228
+Q 377.204 106.028, 376.844 105.348
+L 376.844 128.748
+L 373.164 128.748
+L 373.164 100.428
+L 377.644 100.428
+' fill='#0000FF'/>
+<path  class='atom-2' d='M 398.044 100.428
+L 401.884 100.428
+L 401.884 112.468
+L 416.364 112.468
+L 416.364 100.428
+L 420.204 100.428
+L 420.204 128.748
+L 416.364 128.748
+L 416.364 115.668
+L 401.884 115.668
+L 401.884 128.748
+L 398.044 128.748
+L 398.044 100.428
+' fill='#0000FF'/>
+<path  class='atom-2' d='M 421.577 127.755
+Q 422.263 125.986, 423.9 125.009
+Q 425.537 124.006, 427.807 124.006
+Q 430.632 124.006, 432.216 125.537
+Q 433.8 127.068, 433.8 129.788
+Q 433.8 132.56, 431.741 135.147
+Q 429.708 137.734, 425.484 140.796
+L 434.117 140.796
+L 434.117 142.908
+L 421.524 142.908
+L 421.524 141.14
+Q 425.009 138.658, 427.068 136.81
+Q 429.153 134.962, 430.157 133.299
+Q 431.16 131.636, 431.16 129.92
+Q 431.16 128.124, 430.262 127.121
+Q 429.365 126.118, 427.807 126.118
+Q 426.302 126.118, 425.299 126.725
+Q 424.296 127.332, 423.583 128.679
+L 421.577 127.755
+' fill='#0000FF'/>
+</svg>

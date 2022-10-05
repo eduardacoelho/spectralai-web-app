@@ -1,0 +1,79 @@
+.title_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.title {
+    color: #e33d33;
+    text-align: center;
+    font-size: 3em;
+    margin-right: .4em;
+}
+
+.title span {
+    color: #333;
+}
+
+.spectral_container {
+    display: block; 
+    margin: 0 auto;
+    padding: auto;
+    /*border: red solid;*/
+}
+
+.molecule_select {
+    display: flex; 
+    flex-wrap: wrap;
+    flex-direction: column;
+    overflow-x: scroll; 
+    overflow-y: hidden; 
+    margin: 0 10rem;
+    height: 17rem;
+    justify-content: space-between; /* cada um ficará espaçado igualmente um do outro */
+  }
+
+
+.container_right {
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    width: 50rem;
+    height: 35rem;
+    margin: 0 1rem 0;
+
+}
+
+.spectral_plot {
+    height: 40rem;
+    width: 40rem;
+}
+
+.spectral_tables {
+    display: flex; /* os items ficarão um do lado do outro */
+    justify-content: space-around;
+    padding: 0.5em;
+    margin: 0 10rem; /* centralizar todo o conteudo da div na horizontal */
+}
+
+.spectral_plot {
+    display:block;
+    width: 100%;
+}
+.spectral_metric {
+    margin: 0 0 3rem;
+}
+.spectral_metric, .spectral_prediction {
+    padding: 1rem;
+    border-radius: 1em;
+    border: 2px solid #E33D33;
+    box-shadow: 5px 5px 12px rgba(0,0,0,0.5);
+    background-color: rgba(220,220,220,0.5);
+    font-size: 1.5rem;
+}
+
+
+.spectral_tables li {
+    margin-right: 3em;
+}
