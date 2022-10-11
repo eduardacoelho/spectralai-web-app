@@ -2,6 +2,17 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+:root {
+	--red: #ef233c;
+	--darkred: #c00424;
+	--platinum: #e5e5e5;
+	--black: #2b2d42;
+	--white: #fff;
+	--thumb: #edf2f4;
+	--darkgray: rgba(135,135,135,0.5);
+	--lightgray: rgba(220,220,220,0.5);
+}
+
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,

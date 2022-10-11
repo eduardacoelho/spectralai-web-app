@@ -1,48 +1,82 @@
-.card_active, .card_inactive {
+ 
+  
+  .mol_card {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-
-    width: 15%;
+    flex: 0 0 100%;
+    padding: 20px;
+    background: var(--white);
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
+    scroll-snap-align: start;
+    transition: all 0.2s;
     height: 10rem;
-    padding: 2rem 0.5rem;
-    margin: 0.5rem 3rem 0.5rem 0;
-
-    border-radius: 1em;
-    border: 2px solid #E33D33;
-    box-shadow: 5px 5px 12px rgba(0,0,0,0.5);
-
-    color: #
-}
-
-.card_inactive {
+  }
+  
+  .mol_card:not(:last-child) {
+    margin-right: 10px;
+  }
+  
+  .mol_card:hover {
+    color: var(--white);
+    background: var(--red);
+  }
+  
+  .mol_card .mol_card_title {
+    font-size: 20px;
     
-    background-color: rgba(220,220,220,0.5)
-}
-.card_active {
-    background-color: rgba(135,135,135,0.5)
-}
-
-.card_inactive:hover {
-    background-color: rgba(165,165,165,0.5);
-}
-
-
-.card_active .id, .card_inactive .id {
-    margin: 1em 0;
-    background-color: #E33d33;
-    border-radius: 5px;
-    color: #fff;
-    padding: 0.5em;
-    display: flex;
-    justify-content: center;
+  }
+  .mol_card .mol_card_title, .mol_card .mol_card_formula {
     align-items: center;
-}
+    justify-content: center
+  }
+  
+  .mol_card .mol_card_content {
+    margin: 20px 0;
+    max-width: 85%;
+  }
+  
+  .mol_card .mol_card_formula {
+    margin-top: auto;
+  }
 
-.card_active .title, .card_inactive .title {
-    color: #000;
-    text-transform: capitalize;
-    font-size:0.8em;
+  
+ 
+  
+  @media (min-width: 500px) {
+    .mol_card {
+      flex-basis: calc(50% - 10px);
+    }
+  
+    .mol_card:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+  
+  @media (min-width: 700px) {
+    .mol_card {
+      flex-basis: calc(calc(100% / 3) - 20px);
+    }
+  
+    .mol_card:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+  
+  @media (min-width: 1100px) {
+    .mol_card {
+      flex-basis: calc(25% - 30px);
+    }
+  
+    .mol_card:not(:last-child) {
+      margin-right: 40px;
+    }
+  }
+  
+
+.active {
+    background-color: var(--darkgray);
+}
+.inactive {
+    background-color: var(--white);
 }

@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     margin: 2em;
-    background-color: rgba(215,215,215,0.7);
+    /*background-color: rgba(215,215,215,0.7);*/
 }
 
 .title {
@@ -17,15 +17,37 @@
     color: #333;
     font-weight: bold;
 }
-
-.spectral_container {
-    display: block; 
-    margin: 0 auto;
-    padding: auto;
-    /*border: red solid;*/
+/****************** molecule selector ****************/
+.mol_cards {
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+}
+.mol_cards::-webkit-scrollbar {
+    height: 12px;
 }
 
-.molecule_select {
+.mol_cards::-webkit-scrollbar-thumb,
+.mol_cards::-webkit-scrollbar-track {
+  border-radius: 92px;
+}
+
+.mol_cards::-webkit-scrollbar-thumb {
+    background: var(--darkred);
+  }
+.mol_cards::-webkit-scrollbar-track {
+    background: var(--thumb);
+  }
+/*************************************************/
+.mol_container {
+    max-width: 1400px;
+    padding: 0 15px;
+    margin: 0 auto;
+
+}
+/*
+.mol_container {
     display: flex; 
     flex-wrap: wrap;
     flex-direction: column;
@@ -34,8 +56,15 @@
     margin: 0 10rem;
     height: 17rem;
     justify-content: space-between; /* cada um ficará espaçado igualmente um do outro */
-  }
+  
 
+
+.spectral_container {
+    display: block; 
+    margin: 0 auto;
+    padding: auto;
+    /*border: red solid;*/
+}
 
 .container_right {
     display: flex;
