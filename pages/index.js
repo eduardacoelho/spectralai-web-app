@@ -34,16 +34,10 @@ export default function Home() {
             />
           </div>          
           <div className={`${styles.result} ${styles.right}`}>
-            <DynamicPlot className={styles.plot} data={data[idx].data}/>
             <Metric className={styles.metric} metrics={data[idx].metrics}/>
+            <DynamicPlot className={styles.plot} data={data[idx].data}/>            
           </div>  
         </div>
       </div>
     )
 }
-
-/*
-{true
-  ?<div>PLOT</div>
-  :<SpectralDynamicPlot spectralData={data[this.state.ind].data}/>}
-*/

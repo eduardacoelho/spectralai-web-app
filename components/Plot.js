@@ -26,7 +26,7 @@ export default function SpectralDataPlot({data}) {
                         l:30,
                         r:30,
                         b:30,
-                        t:30
+                        t:10
                     },
                     paper_bgcolor: "#dfdfdf",
                     plot_bgcolor: "#dfdfdf",
