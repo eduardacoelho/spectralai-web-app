@@ -9,7 +9,7 @@ export default function Navbar() {
     return (
         <nav className={styles.navbar}>
             <ul >
-                <li className={styles.navbar_logo}>Spectral<span>AI</span></li>
+                <li className={styles.navbar_logo}><Link href='/'><a>Spectral<span>AI</span></a></Link></li>
                 <li className={styles.navbar_toggle} onClick={() => setClicked(current => !current)}><i className="fas fa-bars"></i></li>
                 <li className={`${styles.navbar_links} ${clicked ? styles.active : styles.inactive}`}><Link href="/"><a>Home</a></Link></li>
                 <li className={`${styles.navbar_links} ${clicked ? styles.active : styles.inactive}`}><Link href="/userData"><a>Inserir Dados</a></Link></li>

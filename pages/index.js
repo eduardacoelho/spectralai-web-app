@@ -10,6 +10,8 @@ const DynamicPlot = dynamic(import('../components/Plot'), {
 })
 
 
+
+
 import * as dataraw from '../public/data/forWeb_Tabular.json'
 const data = Array.from(dataraw.default)
 const ids = data.map((item) => (item.ids))
@@ -17,6 +19,10 @@ const ids = data.map((item) => (item.ids))
 
 export default function Home() {
   const [idx, setIdx] =  useState(0)
+
+
+  
+  console.log("AOL", process.env.SENDGRID_API_KEY)
 
 
   return (

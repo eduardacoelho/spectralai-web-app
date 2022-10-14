@@ -10,7 +10,7 @@ export default function Metric({metrics}) {
             <div className={styles.metric}>
                     {metrics.map((item,index) => (
                         <div className={styles.metric_item} key={index}>
-                            <p><span>{item[0]}:</span> {item[1]}</p>
+                            <p><span>{item[0]}:</span> {(item[1]*100).toFixed(1)}%</p>
                         </div>
                     ))}                
             </div>
