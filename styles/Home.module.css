@@ -1,110 +1,71 @@
-.title_container {
-    display: flex;
+.main_container {
+    display:flex;
+    width: 100%;    
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    margin: 2em;
-    /*background-color: rgba(215,215,215,0.7);*/
+    align-content: center;
+    /*border: 3px solid red;*/
+}
+.containers {
+    display:flex;
+    margin: 0.25rem 0; 
+    padding: 0.5rem;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    /*border: 3px solid #333;*/
+    justify-content: center;
+    align-content: center;
+   
 }
 
 .title {
-    color: #e33d33;
+    justify-items: center;
+    color: var(--black);
     text-align: center;
     font-size: 3em;
-    margin-right: 2em;
 }
 
 .title span {
-    color: #333;
+    color: var(--darkred);
     font-weight: bold;
 }
-/****************** molecule selector ****************/
-.mol_cards {
-    display: flex;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    scroll-snap-type: x mandatory;
-}
-.mol_cards::-webkit-scrollbar {
-    height: 12px;
+
+.result_containers {
+    display:flex;
+    flex-wrap: wrap; 
+    justify-content: space-around;  
 }
 
-.mol_cards::-webkit-scrollbar-thumb,
-.mol_cards::-webkit-scrollbar-track {
-  border-radius: 92px;
+.result {
+    /*border: 3px solid #333;*/
+    width: 100%;    
+    margin: 5px 0px;
 }
 
-.mol_cards::-webkit-scrollbar-thumb {
-    background: var(--darkred);
-  }
-.mol_cards::-webkit-scrollbar-track {
-    background: var(--thumb);
-  }
-/*************************************************/
-.mol_container {
-    max-width: 1400px;
-    padding: 0 15px;
-    margin: 0 auto;
-
-}
-/*
-.mol_container {
-    display: flex; 
-    flex-wrap: wrap;
+.right {
+    display:flex;
     flex-direction: column;
-    overflow-x: scroll; 
-    overflow-y: hidden; 
-    margin: 0 10rem;
-    height: 17rem;
-    justify-content: space-between; /* cada um ficará espaçado igualmente um do outro */
-  
-
-
-.spectral_container {
-    display: block; 
-    margin: 0 auto;
-    padding: auto;
-    /*border: red solid;*/
-}
-
-.container_right {
-    display: flex;
-    flex-direction: column;    
-    align-items: center;
-    width: 50rem;
-    height: 35rem;
-    margin: 0 1rem 0;
-
-}
-
-.spectral_plot {
-    height: 40rem;
-    width: 40rem;
-}
-
-.spectral_tables {
-    display: flex; /* os items ficarão um do lado do outro */
-    justify-content: space-around;
-    padding: 0.5em;
-    margin: 0 10rem; /* centralizar todo o conteudo da div na horizontal */
-}
-
-.spectral_plot {
-    display:block;
-    width: 100%;
-}
-.spectral_metric {
-    margin: 0 0 3rem;
-}
-.spectral_metric, .spectral_prediction {
-    padding: 1rem;
-    border-radius: 1em;
-    border: 2px solid #E33D33;
-    box-shadow: 5px 5px 12px rgba(0,0,0,0.5);
-    background-color: rgba(220,220,220,0.5);
-    font-size: 1.5rem;
+    justify-content: flex-start;
+    
 }
 
 
-.spectral_tables li {
-    margin-right: 3em;
+
+
+
+@media (min-width: 700px)  {
+    .containers {
+        width: 90%;
+    }
+    .result {
+        width:40%
+    }
+}
+
+@media (min-width: 1100px)  {
+    .containers {
+        width: 80%;
+    }
 }

@@ -8,6 +8,7 @@ export default function Layout({children}){
         <>
         <Head>
             <link rel="shortcut icon" href="logo.ico"/>
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" key="navbar-toggle"/>
             <title>Spectral AI</title>
         </Head>
         <Navbar />

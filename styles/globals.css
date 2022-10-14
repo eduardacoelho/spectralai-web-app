@@ -1,18 +1,31 @@
+:root {
+	--red: rgb(239, 35, 60);
+	--darkred: rgb(192, 4, 36);
+	--platinum: rgb(229, 229, 229);
+	--black: rgb(43, 45, 66);
+	--white: rgb(255, 255, 255);
+	--thumb: rgb(237, 242, 244);
+	--darkgray2: rgba(35,35,35,0.9);
+	--darkgray1: rgba(135,135,135,0.7);
+	--darkgray: rgba(135,135,135,0.5);
+	/*--lightgray2: rgb(180,180,180);*/
+	--lightgray: rgb(223, 223, 223);
+	--navbar_footer_background: rgb(51, 51, 51);
+}
+
+.main-container{
+    /*min-height: 83vh;*/
+	background-color: var(--lightgray);
+	justify-content: center;
+	align-content: center;
+}
+
+
+
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
-:root {
-	--red: #ef233c;
-	--darkred: #c00424;
-	--platinum: #e5e5e5;
-	--black: #2b2d42;
-	--white: #fff;
-	--thumb: #edf2f4;
-	--darkgray: rgba(135,135,135,0.5);
-	--lightgray: rgba(220,220,220,0.5);
-}
-
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -58,7 +71,27 @@ table {
 	border-spacing: 0;
 }
 
-
-.main-container{
-    min-height: 70vh
-}
+/* sub, sup correction */
+sub, sup {
+	/* Specified in % so that the sup/sup is the right size relative to the surrounding text */
+	font-size: 75%;
+  
+	/* Zero out the line-height so that it doesn't interfere with the positioning that follows */
+	line-height: 0;
+  
+	/* Where the magic happens: makes all browsers position the sup/sup properly, relative to the surrounding text */
+	position: relative;
+  
+	/* Note that if you're using Eric Meyer's reset.css, this is already set and you can remove this rule */
+	vertical-align: baseline;
+  }
+  
+  sup {
+	/* Move the superscripted text up */
+	top: -0.5em;
+  }
+  
+  sub {
+	/* Move the subscripted text down, but only half as far down as the superscript moved up */
+	bottom: -0.25em;
+  }

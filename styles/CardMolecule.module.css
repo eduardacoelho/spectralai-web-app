@@ -1,82 +1,117 @@
- 
-  
-  .mol_card {
+.cards {
     display: flex;
-    flex-direction: column;
-    flex: 0 0 100%;
-    padding: 20px;
-    background: var(--white);
-    border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
-    scroll-snap-align: start;
-    transition: all 0.2s;
-    height: 10rem;
-  }
-  
-  .mol_card:not(:last-child) {
-    margin-right: 10px;
-  }
-  
-  .mol_card:hover {
-    color: var(--white);
-    background: var(--red);
-  }
-  
-  .mol_card .mol_card_title {
-    font-size: 20px;
-    
-  }
-  .mol_card .mol_card_title, .mol_card .mol_card_formula {
-    align-items: center;
-    justify-content: center
-  }
-  
-  .mol_card .mol_card_content {
-    margin: 20px 0;
-    max-width: 85%;
-  }
-  
-  .mol_card .mol_card_formula {
-    margin-top: auto;
-  }
-
-  
- 
-  
-  @media (min-width: 500px) {
-    .mol_card {
-      flex-basis: calc(50% - 10px);
-    }
-  
-    .mol_card:not(:last-child) {
-      margin-right: 20px;
-    }
-  }
-  
-  @media (min-width: 700px) {
-    .mol_card {
-      flex-basis: calc(calc(100% / 3) - 20px);
-    }
-  
-    .mol_card:not(:last-child) {
-      margin-right: 30px;
-    }
-  }
-  
-  @media (min-width: 1100px) {
-    .mol_card {
-      flex-basis: calc(25% - 30px);
-    }
-  
-    .mol_card:not(:last-child) {
-      margin-right: 40px;
-    }
-  }
-  
-
-.active {
-    background-color: var(--darkgray);
+    width: 95%;
+    min-height: 200px;
+    align-items: stretch;
+    box-sizing: border-box;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
 }
-.inactive {
-    background-color: var(--white);
+
+.cards::-webkit-scrollbar {
+    height: 12px;
+}
+
+.cards::-webkit-scrollbar-thumb,
+.cards::-webkit-scrollbar-track {
+  border-radius: 92px;
+}
+.cards::-webkit-scrollbar-thumb {
+    background: var(--darkred);
+}
+.cards::-webkit-scrollbar-track {
+    background: var(--thumb);
+}
+
+
+.card{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 1rem;
+    border: 3px solid var(--darkred);
+    box-shadow: 5px 5px 12px rgba(0,0,0,0.5);
+    background-color: var(--lightgray);
+    color: var(--black);
+    margin: 1rem 1rem;
+    padding: 1rem;
+    flex:0 0 100%;
+    scroll-snap-align: start;
+    height: 120px;
+    max-width:280px;    
+    transition: 0.2s;
+}
+
+
+
+.card:hover {
+    background: var(--darkgray1);
+}
+.active {
+  background-color: var(--darkgray)
+}
+
+
+.card p {
+    text-transform: capitalize;
+}
+
+/*
+@media (min-width: 500px) {
+  .card {
+    flex-basis: calc(50% - 10px);
+  }
+  
+  .card:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+  
+@media (min-width: 700px) {
+  .card {
+    flex-basis: calc((100% / 3) - 20px);
+  }  
+  .card:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+  
+@media (min-width: 1100px) {
+  .card {
+    flex-basis: calc(25% - 30px);
+  }
+  .card:not(:last-child) {
+    margin-right: 40px;
+  }
+}
+*/
+
+
+.card {
+  position: relative;
+}
+
+.card .tooltip {
+  visibility: hidden;
+  min-width: 150px;
+  background-color:var(--darkgray2);/* rgba(35,35,35,0.6);*/
+  color: var(--white);
+  text-align: center;
+  font-weight: bold;
+  border-radius: 6px; 
+  padding: 15px 15px;
+  position: absolute;
+  z-index: 9999;
+  bottom: 70%;
+  left: 0%;
+  opacity: 0; /*0;*/
+  transition: 0.15s;
+}
+
+.card:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.15s;
+  transition-delay: 0.6s;
 }
