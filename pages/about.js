@@ -11,13 +11,15 @@ export default function About() {
             {data.map((item,index) => (
                 <p key={index}>{item}</p>
             ))}
-            
-            <Image 
-                src="/logo.png"
-                width="600"
-                height="300"
-                alt="Neural Network classificator from molecular spectal data"
-            />
+            <div className={styles.img}>
+                <Image 
+                    src="/logo.png"
+                    width="600"
+                    height="300"
+                    alt="Neural Network classificator from molecular spectal data"
+                />
+            </div>
+
         </div>
     )
 }

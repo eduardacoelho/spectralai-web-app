@@ -77,17 +77,17 @@ export default function ContactUs() {
     return (
         <form
             onSubmit={handleSubmit}
-            className="rounded-lg shadow-xl flex flex-col px-8 py-8 bg-white dark:bg-blue-500"
+            className="rounded-lg shadow-xl flex flex-col px-8 py-8 bg-white dark:rgb(223, 223, 223)"
           >
-            <h1 className="text-2xl font-bold dark:text-gray-50">
+            <h1 className="text-2xl font-bold dark:rgb(223, 223, 223)">
               Send a message
             </h1>
   
             <label
               htmlFor="fullname"
-              className="text-gray-500 font-light mt-8 dark:text-gray-50"
+              className="rgb(223, 223, 223) font-light mt-8 dark:rgb(223, 223, 223)"
             >
-              Full name<span className="text-red-500 dark:text-gray-50">*</span>
+              Full name<span className="text-red-500 dark:rgb(223, 223, 223)">*</span>
             </label>
             <input
               type="text"
@@ -96,13 +96,13 @@ export default function ContactUs() {
                 setFullname(e.target.value);
               }}
               name="fullname"
-              className="bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-green-500 font-light text-gray-500"
+              className="bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-green-500 font-light rgb(223, 223, 223)"
             />
            
   
             <label
               htmlFor="email"
-              className="text-gray-500 font-light mt-4 dark:text-gray-50"
+              className="rgb(223, 223, 223) font-light mt-4 dark:rgb(223, 223, 223)"
             >
               E-mail<span className="text-red-500">*</span>
             </label>
@@ -113,13 +113,13 @@ export default function ContactUs() {
               onChange={(e) => {
                 setEmail(e.target.value);
               }}
-              className="bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-green-500 font-light text-gray-500"
+              className="bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-green-500 font-light rgb(223, 223, 223)"
             />
             
   
             <label
               htmlFor="subject"
-              className="text-gray-500 font-light mt-4 dark:text-gray-50"
+              className="rgb(223, 223, 223) font-light mt-4 dark:rgb(223, 223, 223)"
             >
               Subject<span className="text-red-500">*</span>
             </label>
@@ -130,12 +130,12 @@ export default function ContactUs() {
               onChange={(e) => {
                 setSubject(e.target.value);
               }}
-              className="bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-green-500 font-light text-gray-500"
+              className="bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-green-500 font-light rgb(223, 223, 223)"
             />
            
             <label
               htmlFor="message"
-              className="text-gray-500 font-light mt-4 dark:text-gray-50"
+              className="rgb(223, 223, 223) font-light mt-4 dark:rgb(223, 223, 223)"
             >
               Message<span className="text-red-500">*</span>
             </label>
@@ -145,13 +145,13 @@ export default function ContactUs() {
               onChange={(e) => {
                 setMessage(e.target.value);
               }}
-              className="bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-green-500 font-light text-gray-500"
+              className="bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-green-500 font-light rgb(223, 223, 223)"
             ></textarea>
             
             <div className="flex flex-row items-center justify-start">
               <button
                 type="submit"
-                className="px-10 mt-8 py-2 bg-[#130F49] text-gray-50 font-light rounded-md text-lg flex flex-row items-center"
+                className="px-10 mt-8 py-2 bg-[#464646] text-gray-50 font-light rounded-md text-lg flex flex-row items-center"
               >
                 Submit
                 <svg
